@@ -17,6 +17,10 @@ namespace AppVendasWeb.Controllers
         {
             return View();
         }
+        public IActionResult TestIndex()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

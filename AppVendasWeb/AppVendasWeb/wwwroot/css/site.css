@@ -20,3 +20,75 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(52, 52, 52);
+    background: black;
+}
+
+    .wrapper a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 3px;
+        text-transform: uppercase;
+        color: #585858;
+        font-family: "Roboto", sans-serif;
+    }
+.modal {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+
+}
+
+    .modal:target {
+        visibility: visible;
+        
+        display: block;
+    }
+.content {
+    border-radius: 4px;
+    position: relative;
+    width: 200px;
+    max-width: 20px;
+    background: #fff;
+    padding: 1em 2em;
+}
+
+.footer {
+    text-align: right;
+    margin-top: 50px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+}
+
+.footer-btn-close {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #cfcca8;
+    color: #000000;
+    border-radius: 3px;
+}
