@@ -1,0 +1,36 @@
+﻿@model IEnumerable<AppVendasWeb.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="display-5 text-white my-5">Categorias</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-light align-items-center d-inline-flex "> <svg class="me-3" bootstrap-icon="PlusCircle" width="16" height="16" aria-label="Plus Circle"></svg>ADICIONAR</a>
+</p>
+<table class="table text-color-white">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoriaNome)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoriaNome)
+                </td>
+                <td class="text-end">
+                    <a class="btn text-success" asp-action="Edit" asp-route-id="@item.CategoriaId"><svg bootstrap-icon="PencilSquare" width="24" height="24" aria-label="Delete"></svg></a>
+                    <a class="btn text-info" asp-action="Details" asp-route-id="@item.CategoriaId"><svg bootstrap-icon="InfoSquare" width="24" height="24" aria-label="Delete"></svg></a>
+                    <a class="btn text-danger" asp-action="Delete" asp-route-id="@item.CategoriaId"><svg bootstrap-icon="Trash" width="24" height="24" aria-label="Delete"></svg></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
