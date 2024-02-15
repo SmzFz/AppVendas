@@ -3,35 +3,85 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4 tituloPagina">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">Feito pelo Salmazo</a>.</p>
+    <h1 class="display-4 tituloPagina">Bem-Vindo!</h1>
+
 </div>
 
 <hr class="my-3" />
 <br />
-<h3>Janela Modal</h3>
+<h3 class="msg">DESCUBRA UM PLANO QUE IRÁ SUPRIR SUAS NECESSIDADES!</h3>
 
+<div class="cards">
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Exemplo de janela modal, centralizada,com scroll e estatica
-</button>
+    <article class="information [ card ]">
+        <span class="tag">Plano Básico</span>
+        <h2 class="title">Simples e Economico</h2>
+        <p class="info">Neste plano, você irá encontrar o melhor de nosso sistema porém sem regalias.</p>
+        <button class="button">
+            <span>Veja mais</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="none">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z" fill="currentColor" />
+            </svg>
+        </button>
+    </article>
+    <article class="plan [ card ]">
+        <div class="inner">
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                .........................................................
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <span class="pricing">
+                <span>
+                    $56 <small>/ m</small>
+                </span>
+            </span>
+            <h2 class="title">Profissional</h2>
+            <p class="info">Esse plano é para empresas que já conhecem nosso trabalho e pretendem extrair o máximo de nossos serviçoes</p>
+            <ul class="features">
+                <li>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                        </svg>
+                    </span>
+                    <span><strong>20</strong> horas por dia</span>
+                </li>
+                <li>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                        </svg>
+                    </span>
+                    <span>Este plano<strong>Inclui tudo disponível</strong></span>
+                </li>
+                <li>
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" fill="currentColor" />
+                        </svg>
+                    </span>
+                    <span>Compartilhamento em tempo real</span>
+                </li>
+            </ul>
+            <button class="button">
+                Mude seu plano
+
+            </button>
         </div>
-    </div>
+    </article>
+    <article class="information [ card ]">
+        <h2 class="title">Plano Empresarial</h2>
+        <p class="info">Este plano é para empresas que pretendem incluir seus funcionários com planos particulares para melhor reconhecimento.</p>
+        <dl class="details">
+            <div>
+                <dt>Satisfação</dt>
+                <dd>100%</dd>
+            </div>
+            <div>
+                <dt>Customers</dt>
+                <dd>4.5K</dd>
+            </div>
+        </dl>
+    </article>
 </div>

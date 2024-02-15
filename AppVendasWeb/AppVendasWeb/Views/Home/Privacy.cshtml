@@ -1,6 +1,19 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Politica de Privacidade";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Site totalmente seguro e dirigido por um aluno responsável</p>
+
+
+<div class="card text-center">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body bg-dark">
+        <h5 class="card-title">@ViewData["Title"]</h5>
+        <p class="card-text">Site totalmente seguro e dirigido por um aluno responsável, venha se conectar em um banco de dados totalmente seguro e privado!</p>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Vamos lá</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+        2 days ago
+    </div>
+</div>
